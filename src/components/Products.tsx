@@ -4,13 +4,15 @@ const Products = () => {
   const products = [
     {
       name: "Напольная вешалка Классик",
-      image: "/placeholder-product-1.jpg",
+      image:
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=600&fit=crop",
       description:
         "Элегантная напольная вешалка из массива дерева. Идеально подходит для прихожей и спальни.",
     },
     {
       name: "Напольная вешалка Модерн",
-      image: "/placeholder-product-2.jpg",
+      image:
+        "https://images.unsplash.com/photo-1549497538-303791108f95?w=400&h=600&fit=crop",
       description:
         "Современный дизайн с металлическими элементами. Компактная и функциональная.",
     },

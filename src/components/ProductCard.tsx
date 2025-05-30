@@ -37,13 +37,18 @@ const ProductCard = ({
           width: "100%",
           aspectRatio: "3/4",
           backgroundColor: "#f8f9fa",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          fontSize: "48px",
+          overflow: "hidden",
         }}
       >
-        🪑
+        <img
+          src={image}
+          alt={name}
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+          }}
+        />
       </div>
 
       <div style={{ padding: "24px" }}>

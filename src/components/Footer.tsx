@@ -65,12 +65,15 @@ const Footer = () => {
               }}
             >
               <p style={{ marginBottom: "10px", opacity: "0.9" }}>
-                📧 info@vismut-shop.ru
+                📧 sales@vismutshop.ru
               </p>
               <p style={{ marginBottom: "10px", opacity: "0.9" }}>
-                📱 +7 (XXX) XXX-XX-XX
+                📱 +7 (495) 123-45-67
               </p>
-              <p style={{ opacity: "0.9" }}>📍 Россия, г. Москва</p>
+              <p style={{ marginBottom: "10px", opacity: "0.9" }}>
+                📍 Россия, г. Москва, ул. Производственная, 15
+              </p>
+              <p style={{ opacity: "0.9" }}>🕒 Пн-Пт: 9:00-18:00</p>
             </div>
           </div>
 
