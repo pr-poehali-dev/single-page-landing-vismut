@@ -8,7 +8,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">VismutSHOP</h3>
             <p className="text-gray-400 mb-4">
-              Качественная электроника по доступным ценам
+              Качественные вешалки для дома и офиса
             </p>
             <div className="flex space-x-4">
               <Icon name="Phone" size={20} />
@@ -21,22 +21,22 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-400">
               <li>
                 <a href="#" className="hover:text-white transition-colors">
-                  Смартфоны
+                  Деревянные вешалки
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-white transition-colors">
-                  Ноутбуки
+                  Металлические вешалки
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-white transition-colors">
-                  Наушники
+                  Напольные вешалки
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-white transition-colors">
-                  Аксессуары
+                  Настенные вешалки
                 </a>
               </li>
             </ul>

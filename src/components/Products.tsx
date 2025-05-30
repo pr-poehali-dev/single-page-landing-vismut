@@ -2,27 +2,27 @@ const Products = () => {
   const products = [
     {
       id: 1,
-      name: "Смартфон Premium",
-      price: "49 990 ₽",
+      name: "Классическая деревянная вешалка",
+      price: "2 990 ₽",
       image:
-        "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400",
-      description: "Флагманский смартфон с отличной камерой",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+      description: "Элегантная вешалка из натурального дерева",
     },
     {
       id: 2,
-      name: "Ноутбук Pro",
-      price: "89 990 ₽",
+      name: "Металлическая вешалка Loft",
+      price: "4 500 ₽",
       image:
-        "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400",
-      description: "Мощный ноутбук для работы и развлечений",
+        "https://images.unsplash.com/photo-1503602642458-232111445657?w=400",
+      description: "Стильная металлическая вешалка в стиле лофт",
     },
     {
       id: 3,
-      name: "Наушники Wireless",
-      price: "15 990 ₽",
+      name: "Компактная напольная вешалка",
+      price: "3 200 ₽",
       image:
-        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400",
-      description: "Беспроводные наушники с шумоподавлением",
+        "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=400",
+      description: "Удобная напольная вешалка для небольших помещений",
     },
   ];
 
@@ -30,7 +30,7 @@ const Products = () => {
     <section id="products" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
-          Популярные товары
+          Каталог вешалок
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -9,8 +9,8 @@ const Hero = () => {
           Добро пожаловать в VismutSHOP
         </h1>
         <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-          Качественные товары по доступным ценам. Быстрая доставка по всей
-          России.
+          Качественные вешалки для дома и офиса. Стильные решения для
+          организации пространства.
         </p>
         <button className="bg-white text-purple-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors">
           Смотреть каталог

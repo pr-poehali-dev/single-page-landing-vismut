@@ -8,28 +8,29 @@ const About = () => {
               О компании VismutSHOP
             </h2>
             <p className="text-lg text-gray-600 mb-6">
-              Мы — команда профессионалов, которая уже более 10 лет работает на
-              рынке электроники. Наша миссия — предоставлять качественные товары
-              по доступным ценам.
+              Мы — команда профессионалов, которая специализируется на
+              производстве и продаже качественных вешалок. Наша миссия —
+              создавать функциональные и стильные решения для организации
+              гардероба.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div className="text-center">
                 <div className="text-3xl font-bold text-purple-600 mb-2">
-                  10+
+                  5+
                 </div>
                 <div className="text-gray-600">лет на рынке</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-purple-600 mb-2">
-                  50K+
+                  15K+
                 </div>
                 <div className="text-gray-600">довольных клиентов</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-purple-600 mb-2">
-                  1000+
+                  200+
                 </div>
-                <div className="text-gray-600">товаров в каталоге</div>
+                <div className="text-gray-600">моделей вешалок</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-purple-600 mb-2">
@@ -41,7 +42,7 @@ const About = () => {
           </div>
           <div>
             <img
-              src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600"
+              src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600"
               alt="О компании"
               className="rounded-lg shadow-lg"
             />
