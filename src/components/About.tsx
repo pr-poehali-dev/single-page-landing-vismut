@@ -1,61 +1,51 @@
 const About = () => {
   return (
-    <section
-      style={{
-        padding: "80px 0",
-        backgroundColor: "white",
-      }}
-    >
-      <div
-        style={{
-          maxWidth: "800px",
-          margin: "0 auto",
-          padding: "0 20px",
-          textAlign: "center",
-        }}
-      >
-        <h2
-          style={{
-            fontSize: "clamp(28px, 4vw, 42px)",
-            fontWeight: "700",
-            marginBottom: "30px",
-            background: "linear-gradient(135deg, #005BFF 0%, #CB11AB 100%)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-            backgroundClip: "text",
-            fontFamily: "Montserrat, sans-serif",
-          }}
-        >
-          О компании VismutSHOP
-        </h2>
-
-        <div
-          style={{
-            fontSize: "18px",
-            lineHeight: "1.7",
-            color: "#555",
-            fontFamily: "Open Sans, sans-serif",
-            textAlign: "left",
-          }}
-        >
-          <p style={{ marginBottom: "20px" }}>
-            Мы специализируемся на производстве качественных напольных вешалок,
-            которые сочетают в себе функциональность и элегантный дизайн. Наша
-            продукция создается с учетом современных тенденций интерьера и
-            потребностей наших клиентов.
-          </p>
-
-          <p style={{ marginBottom: "20px" }}>
-            Каждая вешалка проходит строгий контроль качества и изготавливается
-            из экологически чистых материалов. Мы гордимся тем, что наши изделия
-            служат долго и радуют своих владельцев надежностью и красотой.
-          </p>
-
-          <p>
-            Вы можете приобрести нашу продукцию на ведущих маркетплейсах России
-            — OZON и Wildberries, где мы поддерживаем высокие стандарты
-            обслуживания и быструю доставку по всей стране.
-          </p>
+    <section id="about" className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              О компании VismutSHOP
+            </h2>
+            <p className="text-lg text-gray-600 mb-6">
+              Мы — команда профессионалов, которая уже более 10 лет работает на
+              рынке электроники. Наша миссия — предоставлять качественные товары
+              по доступным ценам.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-purple-600 mb-2">
+                  10+
+                </div>
+                <div className="text-gray-600">лет на рынке</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-purple-600 mb-2">
+                  50K+
+                </div>
+                <div className="text-gray-600">довольных клиентов</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-purple-600 mb-2">
+                  1000+
+                </div>
+                <div className="text-gray-600">товаров в каталоге</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-purple-600 mb-2">
+                  24/7
+                </div>
+                <div className="text-gray-600">поддержка клиентов</div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600"
+              alt="О компании"
+              className="rounded-lg shadow-lg"
+            />
+          </div>
         </div>
       </div>
     </section>

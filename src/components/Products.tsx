@@ -1,64 +1,64 @@
-import ProductCard from "./ProductCard";
-
 const Products = () => {
   const products = [
     {
-      name: "Напольная вешалка Классик",
+      id: 1,
+      name: "Смартфон Premium",
+      price: "49 990 ₽",
       image:
-        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=600&fit=crop",
-      description:
-        "Элегантная напольная вешалка из массива дерева. Идеально подходит для прихожей и спальни.",
+        "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400",
+      description: "Флагманский смартфон с отличной камерой",
     },
     {
-      name: "Напольная вешалка Модерн",
+      id: 2,
+      name: "Ноутбук Pro",
+      price: "89 990 ₽",
       image:
-        "https://images.unsplash.com/photo-1549497538-303791108f95?w=400&h=600&fit=crop",
-      description:
-        "Современный дизайн с металлическими элементами. Компактная и функциональная.",
+        "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400",
+      description: "Мощный ноутбук для работы и развлечений",
+    },
+    {
+      id: 3,
+      name: "Наушники Wireless",
+      price: "15 990 ₽",
+      image:
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400",
+      description: "Беспроводные наушники с шумоподавлением",
     },
   ];
 
   return (
-    <section
-      style={{
-        padding: "80px 0",
-        backgroundColor: "#f8f9fa",
-      }}
-    >
-      <div
-        style={{
-          maxWidth: "1200px",
-          margin: "0 auto",
-          padding: "0 20px",
-        }}
-      >
-        <h2
-          style={{
-            fontSize: "clamp(28px, 4vw, 42px)",
-            fontWeight: "700",
-            textAlign: "center",
-            marginBottom: "50px",
-            background: "linear-gradient(135deg, #005BFF 0%, #CB11AB 100%)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-            backgroundClip: "text",
-            fontFamily: "Montserrat, sans-serif",
-          }}
-        >
-          Наша продукция
+    <section id="products" className="py-20 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
+          Популярные товары
         </h2>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-            gap: "40px",
-            maxWidth: "800px",
-            margin: "0 auto",
-          }}
-        >
-          {products.map((product, index) => (
-            <ProductCard key={index} {...product} />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {products.map((product) => (
+            <div
+              key={product.id}
+              className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
+            >
+              <img
+                src={product.image}
+                alt={product.name}
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                  {product.name}
+                </h3>
+                <p className="text-gray-600 mb-4">{product.description}</p>
+                <div className="flex justify-between items-center">
+                  <span className="text-2xl font-bold text-purple-600">
+                    {product.price}
+                  </span>
+                  <button className="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors">
+                    Купить
+                  </button>
+                </div>
+              </div>
+            </div>
           ))}
         </div>
       </div>

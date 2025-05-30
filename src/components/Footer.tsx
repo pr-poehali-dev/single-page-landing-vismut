@@ -1,147 +1,100 @@
+import Icon from "@/components/ui/icon";
+
 const Footer = () => {
   return (
-    <footer
-      id="contacts"
-      style={{
-        background: "linear-gradient(135deg, #005BFF 0%, #CB11AB 100%)",
-        color: "white",
-        padding: "60px 0 30px",
-      }}
-    >
-      <div
-        style={{
-          maxWidth: "1200px",
-          margin: "0 auto",
-          padding: "0 20px",
-        }}
-      >
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
-            gap: "40px",
-            marginBottom: "40px",
-          }}
-        >
+    <footer id="contact" className="bg-gray-900 text-white py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3
-              style={{
-                fontSize: "24px",
-                fontWeight: "700",
-                marginBottom: "20px",
-                fontFamily: "Montserrat, sans-serif",
-              }}
-            >
-              VismutSHOP
-            </h3>
-            <p
-              style={{
-                fontSize: "16px",
-                lineHeight: "1.6",
-                opacity: "0.9",
-                fontFamily: "Open Sans, sans-serif",
-              }}
-            >
-              Производитель качественных напольных вешалок. Доставка по всей
-              России через OZON и Wildberries.
+            <h3 className="text-xl font-bold mb-4">VismutSHOP</h3>
+            <p className="text-gray-400 mb-4">
+              Качественная электроника по доступным ценам
             </p>
-          </div>
-
-          <div>
-            <h4
-              style={{
-                fontSize: "18px",
-                fontWeight: "600",
-                marginBottom: "20px",
-                fontFamily: "Montserrat, sans-serif",
-              }}
-            >
-              Контактная информация
-            </h4>
-            <div
-              style={{
-                fontSize: "16px",
-                fontFamily: "Open Sans, sans-serif",
-              }}
-            >
-              <p style={{ marginBottom: "10px", opacity: "0.9" }}>
-                📧 sales@vismutshop.ru
-              </p>
-              <p style={{ marginBottom: "10px", opacity: "0.9" }}>
-                📱 +7 (495) 123-45-67
-              </p>
-              <p style={{ marginBottom: "10px", opacity: "0.9" }}>
-                📍 Россия, г. Москва, ул. Производственная, 15
-              </p>
-              <p style={{ opacity: "0.9" }}>🕒 Пн-Пт: 9:00-18:00</p>
+            <div className="flex space-x-4">
+              <Icon name="Phone" size={20} />
+              <span className="text-gray-400">+7 (495) 123-45-67</span>
             </div>
           </div>
 
           <div>
-            <h4
-              style={{
-                fontSize: "18px",
-                fontWeight: "600",
-                marginBottom: "20px",
-                fontFamily: "Montserrat, sans-serif",
-              }}
-            >
-              Маркетплейсы
-            </h4>
-            <div
-              style={{ display: "flex", flexDirection: "column", gap: "12px" }}
-            >
+            <h4 className="text-lg font-semibold mb-4">Каталог</h4>
+            <ul className="space-y-2 text-gray-400">
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Смартфоны
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Ноутбуки
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Наушники
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Аксессуары
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Компания</h4>
+            <ul className="space-y-2 text-gray-400">
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  О нас
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Доставка
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Гарантия
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Социальные сети</h4>
+            <div className="flex space-x-4">
               <a
                 href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  color: "white",
-                  textDecoration: "none",
-                  fontSize: "16px",
-                  fontFamily: "Open Sans, sans-serif",
-                  transition: "opacity 0.3s ease",
-                }}
-                onMouseEnter={(e) => (e.target.style.opacity = "0.7")}
-                onMouseLeave={(e) => (e.target.style.opacity = "1")}
+                className="text-gray-400 hover:text-white transition-colors"
               >
-                🛒 Наш магазин на OZON
+                <Icon name="Instagram" size={24} />
               </a>
               <a
                 href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  color: "white",
-                  textDecoration: "none",
-                  fontSize: "16px",
-                  fontFamily: "Open Sans, sans-serif",
-                  transition: "opacity 0.3s ease",
-                }}
-                onMouseEnter={(e) => (e.target.style.opacity = "0.7")}
-                onMouseLeave={(e) => (e.target.style.opacity = "1")}
+                className="text-gray-400 hover:text-white transition-colors"
               >
-                🛍️ Наш магазин на Wildberries
+                <Icon name="Twitter" size={24} />
+              </a>
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
+                <Icon name="Facebook" size={24} />
               </a>
             </div>
           </div>
         </div>
 
-        <div
-          style={{
-            borderTop: "1px solid rgba(255,255,255,0.2)",
-            paddingTop: "20px",
-            textAlign: "center",
-            fontSize: "14px",
-            opacity: "0.8",
-            fontFamily: "Open Sans, sans-serif",
-          }}
-        >
-          © 2024 VismutSHOP. Все права защищены.
+        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+          <p>&copy; 2024 VismutSHOP. Все права защищены.</p>
         </div>
       </div>
     </footer>
